@@ -1,0 +1,2 @@
+We are exploring about with command in python File Handling
+ We are exploring the append in the with function
