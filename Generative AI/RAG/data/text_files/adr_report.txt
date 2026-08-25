@@ -1,0 +1,25 @@
+Adverse Drug Reaction Report
+
+Patient: 45-year-old male
+Suspected Drug: Metformin 500 mg
+Indication: Type 2 Diabetes Mellitus
+Treatment Duration: 6 months
+
+The patient reported persistent nausea, abdominal discomfort, and diarrhea after starting metformin therapy. The symptoms gradually increased in severity and were associated with reduced appetite.
+
+Clinical Findings:
+
+- Persistent nausea
+- Abdominal discomfort
+- Diarrhea
+- Reduced appetite
+- Occasional dizziness
+
+The physician suspected that the gastrointestinal symptoms could be associated with metformin therapy. The dose was reduced and the patient was advised to take the medication with meals.
+
+Outcome:
+
+The patient's symptoms improved significantly after dose reduction. No hospitalization was required.
+
+Seriousness: Non-serious
+Causality Assessment: Possible association with metformin.

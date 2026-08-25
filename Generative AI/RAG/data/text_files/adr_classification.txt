@@ -1,0 +1,14 @@
+Adverse Drug Reaction Classification
+
+Adverse drug reactions can be classified according to their characteristics, severity, seriousness, and relationship with the suspected medicine.
+
+Common categories include:
+
+- Type A reactions: Dose-dependent and predictable reactions.
+- Type B reactions: Unpredictable reactions that are not usually dose-dependent.
+- Type C reactions: Reactions associated with long-term drug exposure.
+- Type D reactions: Delayed adverse reactions.
+- Type E reactions: Reactions that occur after withdrawal of a medicine.
+- Type F reactions: Unexpected therapeutic failure.
+
+ADR classification helps pharmacovigilance systems organize safety information and support further investigation.

@@ -1,0 +1,16 @@
+Pharmacovigilance Introduction
+
+Pharmacovigilance is the science and activities concerned with the detection, assessment, understanding, and prevention of adverse effects or any other drug-related problems.
+
+The primary goal of pharmacovigilance is to improve patient safety by continuously monitoring the safety and effectiveness of medicines after they are introduced into the market.
+
+Key Areas:
+
+- Adverse Drug Reaction (ADR) detection
+- Drug safety monitoring
+- Causality assessment
+- Signal detection
+- Risk assessment and management
+- Patient safety
+
+Pharmacovigilance data can be collected from healthcare professionals, patients, clinical trials, electronic health records, and spontaneous adverse event reports.

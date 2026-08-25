@@ -1,0 +1,16 @@
+Pharmacovigilance Signal Detection
+
+Signal detection is an important activity in pharmacovigilance used to identify previously unknown or insufficiently documented relationships between medicines and adverse events.
+
+A potential safety signal may emerge when an adverse event is reported more frequently than expected for a particular medicine.
+
+Signal detection can involve:
+
+- Statistical analysis
+- Disproportionality analysis
+- Case report review
+- Literature monitoring
+- Clinical evaluation
+- Expert assessment
+
+Identified signals require further investigation before conclusions about drug safety can be established.
