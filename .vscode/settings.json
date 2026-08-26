@@ -1,7 +1,7 @@
 {
-    "editor.tokenColorCustomizations": {
-        "comments": "",
-        "textMateRules": []
-    },
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+  "editor.tokenColorCustomizations": {
+    "comments": "",
+    "textMateRules": []
+  },
+  "python-envs.defaultEnvManager": "ms-python.python:system"
 }
