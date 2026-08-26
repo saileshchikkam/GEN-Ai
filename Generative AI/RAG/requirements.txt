@@ -6,3 +6,5 @@ pymupdf
 sentence-transformers
 faiss-cpu
 chromaDB
+langchain-groq
+python-dotenv

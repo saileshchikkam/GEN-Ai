@@ -1,0 +1,28 @@
+(RAG) D:\AI Dev\Generative AI\RAG>python app.py
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 10772.86it/s]
+[INFO] Loaded embedding model: all-MiniLM-L6-v2
+[INFO] Loaded Faiss index and metadata from faiss_store
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 4178.89it/s]
+[INFO] Loaded embedding model: all-MiniLM-L6-v2
+[INFO] Loaded Faiss index and metadata from faiss_store
+[INFO] Groq LLM initialized: groq/compound-mini
+[INFO] Querying vector store for: 'What is attention mechanism?'
+Summary: **Attention Mechanism – Summary**
+
+- **Purpose:** Lets a model decide which tokens (words, sub‑words, etc.) are most relevant when creating a representation for a specific token or generating an output.
+
+- **Key Components:**  
+  - **Query (Q), Key (K), Value (V):** Learned linear projections of the input.  
+  - **Similarity:** The dot‑product between a query and each key measures relevance.
+
+- **Scaled Dot‑Product Attention:**  
+  \[
+  \text{Attention}(Q,K,V)=\text{softmax}\!\left(\frac{QK^{\top}}{\sqrt{d_k}}\right)V
+  \]  
+  Scaling by \(\sqrt{d_k}\) keeps the dot‑products numerically stable before the softmax.
+
+- **Multi‑Head Attention:** Multiple attention “heads” run in parallel, each learning different patterns (e.g., local context, long‑range dependencies). Their outputs are concatenated and linearly projected.
+
+- **Why It Matters:** Core to modern Transformer‑based NLP models and used in tasks such as machine translation, document retrieval, summarization, question answering, and multimodal systems.
+
+(RAG) D:\AI Dev\Generative AI\RAG>
