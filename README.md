@@ -309,7 +309,6 @@ the streak will keep growing. 🔥
 
 ---
 
-**Course:** TuteDude — Generative AI
 **Repository:** `GEN-Ai`
 **Approach:** Learn → Build → Debug → Push → Repeat
 
