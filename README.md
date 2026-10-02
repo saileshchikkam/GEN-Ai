@@ -1,315 +1,343 @@
-# 🧠 GEN-Ai — The Journey
+# 🧠 GEN-Ai — From Fundamentals to GenAI Systems
 
-> **Learning GenAI one day at a time. Building, breaking, understanding, and building again.**
+> **A hands-on learning repository tracking my progress across Python, Machine Learning, NLP, and Generative AI — from fundamentals to practical RAG applications.**
 
-This repository is not just a collection of code.
+This repository has evolved beyond a simple course log. It now contains the code, notebooks, assignments, experiments, datasets, and prototypes I am building while developing my AI/ML foundation and moving toward **LLM and Generative AI engineering**.
 
-It is a **daily record of my journey into Generative AI** — starting from the fundamentals, writing code every day, experimenting with concepts, completing assignments, making mistakes, fixing them, and gradually turning theory into practical understanding.
+The approach is simple:
 
-I created this repository to make my progress **visible, consistent, and accountable**.
+**Learn → Implement → Experiment → Debug → Understand → Build**
 
 ---
 
-## 🔥 The Daily Streak
+## 🚀 Current Progress
+
+I have moved from foundational programming and ML work into practical Generative AI concepts.
+
+### ✅ Covered
+
+- **Python Fundamentals**
+  - Core Python programming
+  - Problem-solving and scripting
+  - Practical implementations
+
+- **Machine Learning**
+  - Data preprocessing and exploration
+  - Model-building experiments
+  - Classification/regression workflows
+  - Dataset-based experimentation
+
+- **Natural Language Processing**
+  - NLP fundamentals
+  - Text-processing concepts
+  - Practical experimentation
+
+- **Generative AI**
+  - Document loading and processing
+  - Text chunking
+  - Embeddings
+  - Vector search
+  - RAG fundamentals
+  - LLM-based response generation
+
+### 🔥 Currently Building
+
+A practical **RAG pipeline** that combines:
 
 ```text
-Day 01  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  Started
-Day 02  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  Learned
-Day 03  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  Built
-Day 04  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  Debugged
-Day 05  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  Understood
-...
-Today   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  Still going.
+Documents
+    ↓
+Document Loading
+    ↓
+Text Chunking
+    ↓
+Embeddings
+    ↓
+FAISS Vector Store
+    ↓
+Similarity Search
+    ↓
+Relevant Context
+    ↓
+LLM
+    ↓
+Generated Response
 ```
 
-### The rule is simple:
-
-> **Learn something → Write code → Push it → Repeat.**
-
-No waiting for the perfect project.
-
-No waiting until I "know enough."
-
-Just showing up every day.
-
-Every commit represents another day of progress.
+The current RAG implementation uses **LangChain document loaders, Sentence Transformers, FAISS, and a Groq-hosted LLM** to retrieve relevant information from a local knowledge base and generate a summarized response.
 
 ---
 
-## 🎯 Why This Repository Exists
-
-I wanted one place where I could look back and see:
-
-* what I learned
-* what I implemented
-* what I struggled with
-* what I understood
-* what I built
-* how my code evolved over time
-
-Instead of only collecting certificates, I want this repository to show the **actual work behind the learning**.
-
-This is my attempt to turn learning GenAI into a habit rather than a short-term goal.
-
----
-
-## 🗺️ The Journey So Far
-
-The repository is gradually evolving through different layers of AI and software development.
-
-```text
-                    ┌──────────────────────┐
-                    │     GENERATIVE AI    │
-                    └──────────┬───────────┘
-                               │
-                    ┌──────────▼───────────┐
-                    │     Machine Learning │
-                    └──────────┬───────────┘
-                               │
-                    ┌──────────▼───────────┐
-                    │        Python        │
-                    └──────────┬───────────┘
-                               │
-                    ┌──────────▼───────────┐
-                    │     Fundamentals     │
-                    └──────────────────────┘
-
-                 Learn → Implement → Debug → Push
-                         ↑              │
-                         └──────────────┘
-```
-
-The goal isn't simply to finish a course.
-
-The goal is to understand **what is happening underneath the tools I use**.
-
----
-
-## 📂 Repository Structure
+## 🏗️ Repository Structure
 
 ```text
 GEN-Ai/
 │
-├── 🐍 Python/
-│   └── Python learning & implementations
+├── 🐍 Python Fundamentals/
+│   ├── Python concepts
+│   ├── Programs & exercises
+│   └── Practical implementations
 │
 ├── 🤖 Machine Learning/
-│   └── ML concepts, experiments & implementations
+│   ├── DataSets/
+│   ├── ML Model Building/
+│   └── Experiments & notebooks
 │
-├── 📝 Assignments/
-│   └── Course assignments and practical work
+├── 📝 Natural Language Processing/
+│   └── NLP learning & implementations
 │
-├── ⚙️ .vscode/
-│   └── Development configuration
+├── 🧠 Generative AI/
+│   ├── RAG/
+│   │   ├── data/
+│   │   ├── notebook/
+│   │   ├── src/
+│   │   ├── app.py
+│   │   └── requirements.txt
+│   └── README.md
+│
+├── 📚 Assignments/
+│   └── Course assignments & practical work
 │
 ├── 📄 LICENSE
-│
 └── 📖 README.md
 ```
 
-This structure will continue to evolve as the journey moves deeper into Generative AI.
+---
+
+## 🧠 RAG Implementation
+
+The most developed part of the repository currently is the **RAG workspace**.
+
+### Pipeline Components
+
+| Component | Implementation |
+|---|---|
+| Document Loading | LangChain Community Loaders |
+| PDF Processing | PyPDFLoader |
+| Text Processing | RecursiveCharacterTextSplitter |
+| Embeddings | Sentence Transformers |
+| Embedding Model | `all-MiniLM-L6-v2` |
+| Vector Store | FAISS |
+| Retrieval | Similarity Search |
+| LLM | Groq / `groq/compound-mini` |
+| Configuration | Environment variables |
+
+### Supported Input Types
+
+The document loader is designed to process:
+
+- PDF
+- TXT
+- CSV
+- XLSX
+- DOCX
+- JSON
+
+### Example Knowledge Base
+
+The current RAG data includes material related to:
+
+- Pharmacovigilance
+- Adverse Drug Reactions
+- Drug safety
+- Signal detection
+- Attention mechanisms
+- Embeddings
+- Research material
+- APIP-related documents
+
+This provides a practical domain for experimenting with retrieval and LLM-assisted question answering.
 
 ---
 
-## 📈 What I'm Building Toward
+## 🔬 What I Have Learned Through Building
 
-The long-term objective is to move from **learning concepts** to actually understanding and building GenAI systems.
+This repository is helping me understand the components behind modern AI applications rather than only using high-level tools.
 
 ```text
 Python
-   ↓
+  ↓
 Machine Learning
-   ↓
-Deep Learning
-   ↓
+  ↓
 NLP
-   ↓
-LLMs
-   ↓
-Prompt Engineering
-   ↓
+  ↓
 Embeddings
-   ↓
-Vector Databases
-   ↓
+  ↓
+Vector Search
+  ↓
 RAG
-   ↓
-Agents
-   ↓
-Tool Calling
-   ↓
-Fine-Tuning
-   ↓
+  ↓
 LLM Applications
-   ↓
+  ↓
+Agents & Tool Calling
+  ↓
 Production AI Systems
 ```
 
-Each stage is another layer of understanding.
+The current focus is around the transition from **ML/NLP fundamentals → LLM application development**.
 
 ---
 
-## 🧩 My Learning Philosophy
+## 📂 Main Learning Areas
 
-### 01 — Consistency > Intensity
+### 🐍 Python
 
-One hour of focused learning every day is more valuable to me than studying for ten hours once and disappearing for a week.
+Fundamental programming concepts, exercises, scripts, and experiments used as the base for the later AI work.
 
-### 02 — Code > Passive Watching
+### 🤖 Machine Learning
 
-If I learn a concept, I try to implement it.
+Hands-on notebooks, datasets, experiments, and model-building workflows.
 
-If I cannot implement it, I probably haven't understood it well enough.
+### 📝 NLP
 
-### 03 — Errors Are Part of the Process
+Exploring natural language processing concepts that form the foundation for working with text and language models.
 
-A broken program isn't a failed learning session.
+### 🧠 Generative AI
 
-It's another opportunity to understand how things actually work.
+Moving into embeddings, retrieval, RAG pipelines, LLM integration, and eventually agentic systems.
 
-### 04 — Keep Everything
+### 📝 Assignments
 
-Small scripts.
-
-Assignments.
-
-Experiments.
-
-Failed attempts.
-
-Debugging.
-
-Everything belongs here.
-
-Because six months from now, these small things will show how far I've come.
+Course-related practical work and implementations maintained alongside the main learning material.
 
 ---
 
-## 🔥 The Streak Mindset
+## 🎯 Current Direction
 
-I don't want this repository to represent:
+The goal is no longer just to complete individual topics.
 
-> "I completed a GenAI course."
-
-I want it to represent:
-
-> **"I showed up every day and became better at GenAI."**
-
-The streak isn't about having a perfect record.
-
-It's about building the habit of **coming back**.
+I am working toward being able to design and build complete AI systems:
 
 ```text
-┌─────────────────────────────────────────┐
-│                                         │
-│       ONE DAY DOESN'T CHANGE MUCH       │
-│                                         │
-│              ONE YEAR DOES.             │
-│                                         │
-└─────────────────────────────────────────┘
+Understand the fundamentals
+          ↓
+Implement the concepts
+          ↓
+Build small experiments
+          ↓
+Combine multiple components
+          ↓
+Build RAG applications
+          ↓
+Build AI agents
+          ↓
+Add tool calling & workflows
+          ↓
+Explore fine-tuning
+          ↓
+Develop production-ready AI systems
 ```
----
-
-## 🧪 What You'll Find Here
-
-This repository will contain a mixture of:
-
-* Python implementations
-* Machine Learning experiments
-* Generative AI concepts
-* Course assignments
-* Experiments and prototypes
-* Notes through code
-* Debugging sessions
-* Practical implementations
-* Small projects
-* Larger AI applications
-
-Some code may be simple.
-
-Some code may be messy.
-
-Some experiments may fail.
-
-That's intentional.
-
-**This is a learning repository, not a polished portfolio.**
 
 ---
 
-## 📝 Daily Log
-
-I am treating GitHub commits as my learning diary.
-
-Every day I aim to leave something behind:
+## 🛠️ Technologies Used So Far
 
 ```text
-📚 Learned something
-        ↓
-💻 Implemented it
-        ↓
-🐛 Debugged it
-        ↓
-🧠 Understood it
-        ↓
-🚀 Pushed it
-        ↓
-🔥 Streak continues
+Python
+├── NumPy
+├── Pandas
+├── Scikit-learn
+├── Matplotlib
+└── Jupyter
+
+NLP / GenAI
+├── LangChain
+├── Sentence Transformers
+├── FAISS
+└── Groq
+
+Development
+├── Git
+├── GitHub
+└── VS Code
 ```
 
-Over time, these commits will become a timeline of my growth.
+---
+
+## 🧪 Learning Through Building
+
+I intentionally keep experiments, notebooks, assignments, debugging work, and intermediate implementations in this repository.
+
+Some code represents:
+
+- a first implementation of a concept
+- an experiment
+- a debugging session
+- a course assignment
+- a prototype
+- an intermediate step toward a larger AI system
+
+The repository is therefore a record of **practical progression**, not a collection of only finished projects.
 
 ---
 
-## 💭 A Quote I Want This Repository To Represent
+## 📈 Roadmap
 
-> **"Don't try to become an AI Engineer in one day. Become slightly better every day."**
+### ✅ Foundation
 
-The destination is important.
+- [x] Python fundamentals
+- [x] Machine Learning fundamentals
+- [x] NLP foundations
+- [x] Generative AI fundamentals
+- [x] Embeddings
+- [x] Vector search
+- [x] Basic RAG pipeline
 
-But the daily process is what gets me there.
+### 🔄 In Progress
 
----
+- [ ] Improve RAG architecture
+- [ ] Better chunking and retrieval strategies
+- [ ] Retrieval evaluation
+- [ ] Prompt engineering
+- [ ] LLM application patterns
+- [ ] More practical GenAI projects
 
-## 🚀 The Goal
+### ⏭️ Next
 
-By the end of this journey, I don't want to simply say:
-
-**"I learned Generative AI."**
-
-I want to be able to say:
-
-**"I understand how these systems work, I can build them, I can debug them, and I can take them from an idea to a working application."**
-
----
-
-## 🔄 This README Is a Living Document
-
-This repository is **still being built**.
-
-The folder structure will change.
-
-The technologies will change.
-
-The projects will become more complex.
-
-The understanding will become deeper.
-
-And hopefully...
-
-the streak will keep growing. 🔥
+- [ ] Advanced RAG
+- [ ] Reranking
+- [ ] Hybrid retrieval
+- [ ] Agents
+- [ ] Tool calling
+- [ ] Workflow orchestration
+- [ ] Fine-tuning / PEFT
+- [ ] Production deployment
+- [ ] MLOps for AI applications
 
 ---
 
-### 🌱 Started with curiosity.
+## 💡 Learning Philosophy
 
-### 🧠 Continuing with consistency.
+> **Don't just learn the API. Understand the system behind it.**
 
-### 🚀 Building toward becoming an AI Engineer.
+I use this repository to turn concepts into working code, investigate errors, and connect individual topics into complete systems.
+
+**Theory → Code → Experiment → Debug → Understand → Build**
 
 ---
 
-**Repository:** `GEN-Ai`
-**Approach:** Learn → Build → Debug → Push → Repeat
+## 📊 Repository Status
 
-> **Day by day. Commit by commit. Concept by concept.**
+This repository is **actively evolving**.
+
+The earlier stages focus more on fundamentals and coursework. The newer work is increasingly focused on **LLMs, RAG, retrieval systems, and practical AI engineering**.
+
+The structure and projects will continue to change as I move deeper into Generative AI.
+
+---
+
+## 🎯 Long-Term Goal
+
+The direction of this repository is toward building a strong foundation in:
+
+**Machine Learning → NLP → LLMs → RAG → Agents → AI Engineering**
+
+Ultimately, I want to be able to take an AI idea from **concept → implementation → evaluation → deployment**.
+
+---
+
+### 🌱 Learn the fundamentals.
+### 🧠 Understand the systems.
+### 🚀 Build the applications.
+
+**GEN-Ai — Learn → Build → Debug → Repeat.**
